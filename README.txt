@@ -1,7 +1,5 @@
 Description
 
-Your objective for this assignment is to extend the Room example that we did in class and convert it to a modifiable dictionary. The user should be able to add new words and their corresponding definition & parts of speech to the dictionary. Users should also be able to click on an existing word in the dictionary and modify its definition or part of speech.
-
 Main Screen Requirements
 
 - When a user starts the app, there should already be a list of words (with a definition and part of speech) ordered alphabetically in the RecyclerView. At the very minimum, the first screen should look exactly like the in-class example. The only difference should be that instead of simply displaying a word in the RecyclerView row, you should be displaying text in the following format: "word (part of speech abbreviation) - definition". See the attached screenshot.
@@ -24,11 +22,7 @@ NOTE: If the user tries to add a word to the dictionary that already exists, the
 
 - Do not worry about adding an "Up" button at the top left of the screen. If a user would like to go back to the Main screen, they should just press the back button
 
-Bonus Points (+15)
-
-I will be assigning 15 additional bonus points to anyone who attempts to complete this assignment using a database migration. A database migration is usually performed after an application has already shipped and changes need to be made to the existing database (i.e. tables need to be added/removed, columns need to be added/removed/modified, etc). To complete this assignment using a migration, what you should do is fully implement the in-class example and install the app on your device. Once the app is installed, and you've verified that it is working properly, start making modifications to the database and adding in the new fields required for this assignment (definition & parts of speech) wherever needed. In order to receive credit, please follow the instructions provided here, so I can have proof that you actually performed the migration. 
-
-Keep in mind that this is only an optional requirement, you're free to complete the assignment without performing a migration. In order to do that, just uninstall the app from your phone/emulator and make all the database changes you need before installing the app again.
+A database migration is usually performed after an application has already shipped and changes need to be made to the existing database (i.e. tables need to be added/removed, columns need to be added/removed/modified, etc).
 
 Helpful Hints
 
@@ -40,5 +34,4 @@ Android Asset Studio has a tool that can automatically generate notification ico
 
 When following Notifications tutorials online, they may suggest that you add implementation "com.android.support:support-compat:xx.x.x" to your dependencies. If you are not using the androidx libraries for Room, this is the correct dependency to add. If you are using androidx, ensure that this line is added to your dependencies instead: implementation "androidx.appcompat:appcompat:1.1.0-alpha04"
 
-If you're going to be attempting the migration, here is a useful explanation of what migrations are and how they can be accomplished in Room: https://medium.com/google-developers/understanding-migrations-with-room-f01e04b07929
-
+here is a useful explanation of what migrations are and how they can be accomplished in Room: https://medium.com/google-developers/understanding-migrations-with-room-f01e04b07929
